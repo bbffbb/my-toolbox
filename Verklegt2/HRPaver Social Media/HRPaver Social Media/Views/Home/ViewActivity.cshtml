@@ -1,0 +1,186 @@
+﻿@model IEnumerable<HRPaver_Social_Media.Models.PostViewModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/ui-lightness/jquery-ui.css"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <title>ViewBag.Title</title>
+
+    <link href="~/Content/ViewEvents.css" rel="stylesheet" />
+   
+     <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.tabs .tab-links a').on('click', function (e) {
+                var currentAttrValue = $(this).attr('href');
+                // Show/Hide Tabs
+                $('.tabs ' + currentAttrValue).siblings().slideUp(400);
+                $('.tabs ' + currentAttrValue).delay(400).slideDown(400);
+                // Change/remove current tab to active
+                jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+                e.preventDefault();
+            });
+        });
+
+
+    </script>
+</head>
+
+
+<body>
+    <div class="login-card">
+        <div class="tabs">
+            <ul class="tab-links">
+                <li><a href="#tab1">Activity</a></li>
+                <li><a href="#tab2">Q & A</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div id="tab1" class="tab active">
+                    <h1>You created</h1>
+                  
+
+                    <table>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Author)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PostTime)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PostText)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Rateing)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.UserAnonymous)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.GroupId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.GroupName)
+                            </th>
+
+                        </tr>
+
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Author)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PostTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PostText)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Rateing)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UserAnonymous)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GroupId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GroupName)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+
+
+
+
+                <div id="tab2" class="tab">
+                    <h1>You are attending</h1>
+
+                    <table>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Author)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PostTime)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PostText)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Rateing)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.UserAnonymous)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.GroupId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.GroupName)
+                            </th>
+
+                        </tr>
+
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Author)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PostTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PostText)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Rateing)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UserAnonymous)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GroupId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GroupName)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+﻿@model Tuple<List<HRPaver_Social_Media.Models.EventViewModel>, List<HRPaver_Social_Media.Models.EventViewModel>, List<HRPaver_Social_Media.Models.EventViewModel>>
+
+
+@{
+    ViewBag.Title = "ViewAllEvents";
+}
+  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <title>ViewBag.Title</title>
+
+        <div class="row">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#tab_a" data-toggle="tab">Created Events</a></li>
+                <li role="presentation"><a href="#tab_b" data-toggle="tab">Attending Events</a></li>
+                <li role="presentation"><a href="#tab_c" data-toggle="tab">Available Events</a></li>
+            </ul>
+        </div>
+
+  <div class="row">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_a">
+                <h2>You created these events</h2>
+                <div class="h4">
+                    @Html.ActionLink("Create new event", "CreateNewEvent", "Event")
+                </div>
+
+                @foreach (var eventinn in Model.Item1)
+                {
+                    <div class="well">
+                        <div class="container" style="max-width:100">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    @if (!String.IsNullOrEmpty(eventinn.photoPath))
+                                    {
+                                        <div class="">
+                                            <img src="@eventinn.photoPath" class="img-circle" width="75" height="75" />
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="">
+                                            <img src="http://packetcode.com/apps/wall-design/image.jpg" class="img-circle" alt="Profile Picture Missing" width="75" height="75" />
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-weight:100; font-size:small">Created by: @eventinn.Creator.FullName </p>
+                                </div>
+                                <div class="row">
+                                    <button onclick="location.href='@Url.Action("Edit", "Event", new { id = eventinn.Id })'">Edit </button>
+                                    <button onclick="location.href='@Url.Action("Delete", "Event", new { id = eventinn.Id })'">Delete </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <h3>@eventinn.name</h3>
+                                </div>
+                                <div class="row">
+                                    <p><label>At : @eventinn.SignupStart.ToString("hh:mm") - @eventinn.SignupEnd.ToString("hh:mm")</label></p>
+                                </div>
+                                <div class="row">
+                                    <p>@eventinn.description</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <p>Starts : @eventinn.StartTime.ToString("dd/mm/yyyy") <br /> Ends :  @eventinn.EndTime.ToString("dd/mm/yyyy")</p>
+                                </div>
+                                <div class="row attending">
+                                    <p style="font-weight:bold">Attending : @eventinn.Members.Count</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+            <div class="tab-pane" id="tab_b">
+                <h2>You are attending these events</h2>
+                <div class="h4">
+                    @Html.ActionLink("Create new event", "CreateNewEvent", "Event")
+                </div>
+                @foreach (var eventinn in Model.Item2)
+                {
+                    <div class="well">
+                        <div class="container" style="max-width:100%">
+
+                            <div class="col-md-2">
+                                <div class="row">
+                                    @if (!String.IsNullOrEmpty(eventinn.photoPath))
+                                    {
+                                        <div class="">
+                                            <img src="@eventinn.photoPath" class="img-circle" width="75" height="75" />
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="">
+                                            <img src="http://packetcode.com/apps/wall-design/image.jpg" class="img-circle" alt="Profile Picture Missing" width="75" height="75" />
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-weight:100; font-size:small">Created by: @eventinn.Creator.FullName </p>
+                                </div>
+                                <div class="row">
+                                    <button onclick="location.href='@Url.Action("UnAttend", "Event", new { id = eventinn.Id })'">Unattend</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <h3>@eventinn.name</h3>
+                                </div>
+                                <div class="row">
+                                    <p><label>At : @eventinn.SignupStart.ToString("hh:mm") - @eventinn.SignupEnd.ToString("hh:mm")</label></p>
+                                </div>
+                                <div class="row">
+                                    <p>@eventinn.description</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <p>Starts : @eventinn.StartTime.ToString("dd/mm/yyyy") <br /> Ends :  @eventinn.EndTime.ToString("dd/mm/yyyy")</p>
+                                </div>
+                                <div class="row attending">
+                                    <p style="font-weight:bold">Attending : @eventinn.Members.Count</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+
+
+
+            <div class="tab-pane" id="tab_c">
+                <h2>All available events</h2>
+                <div class="h4">
+                    @Html.ActionLink("Create new event", "CreateNewEvent", "Event")
+                </div>
+                @foreach (var eventinn in Model.Item3)
+                {
+                    <div class="well">
+                        <div class="container" style="max-width:100%">
+
+                            <div class="col-md-2">
+                                <div class="row">
+                                    @if (!String.IsNullOrEmpty(eventinn.photoPath))
+                                    {
+                                        <div class="">
+                                            <img src="@eventinn.photoPath" class="img-circle" width="75" height="75" />
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="">
+                                            <img src="http://packetcode.com/apps/wall-design/image.jpg" class="img-circle" alt="Profile Picture Missing" width="75" height="75" />
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-weight:100; font-size:small">Created by: @eventinn.Creator.FullName </p>
+                                </div>
+                                <div class="row">
+                                    <button onclick="location.href='@Url.Action("Attend", "Event", new { id = eventinn.Id })'">Attend</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <h3>@eventinn.name</h3>
+                                </div>
+                                <div class="row">
+                                    <p><label>At : @eventinn.SignupStart.ToString("hh:mm") - @eventinn.SignupEnd.ToString("hh:mm")</label></p>
+                                </div>
+                                <div class="row">
+                                    <p>@eventinn.description</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <p>Starts : @eventinn.StartTime.ToString("dd/mm/yyyy") <br /> Ends :  @eventinn.EndTime.ToString("dd/mm/yyyy")</p>
+                                </div>
+                                <div class="row attending">
+                                    <p style="font-weight:bold">Attending : @eventinn.Members.Count</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+         

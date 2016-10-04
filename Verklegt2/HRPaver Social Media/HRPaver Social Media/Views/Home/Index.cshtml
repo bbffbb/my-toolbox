@@ -1,0 +1,97 @@
+﻿@model IEnumerable<HRPaver_Social_Media.Models.PostViewModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    Html.RenderPartial("Create", new HRPaver_Social_Media.Models.PostViewModel());
+}
+
+
+
+@foreach (var post in Model)
+{   <hr>
+    <div id="insert"></div>
+    <div>
+        <div class="row" id="feed">
+            <div class="col-md-1">
+                @if (!String.IsNullOrEmpty(post.AuthorPhotoFileName))
+                {
+                    <img src="@post.AuthorPhotoFileName" class="img-circle" width="75" height="75" />
+                }
+                else
+                {
+                    <div class="col-md-1"><img src="http://packetcode.com/apps/wall-design/image.jpg" class="img-circle" alt="Profile Picture Missing" width="75" height="75" /></div>
+                }
+            </div>
+            <div class="col-md-11 pull-left">
+                <div>
+                    <label>
+                        @if(post.UserAnonymous)
+                        {
+                            @post.Author
+                        }
+                        else
+                        {
+                            @Html.ActionLink(post.Author, "ViewProfile", new { id = post.AuthorId })
+                        }
+
+                        @if (!String.IsNullOrEmpty(post.GroupName))
+                        {
+                            if (post.StatusOrQuestion == false)
+                            {
+                            <text>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;asked&nbsp;</text>
+                            }
+                            else
+                            {
+                            <text>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;shared&nbsp;</text>
+                            }
+                            <text>on&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</text> @post.GroupName
+                        }
+                    </label>
+                </div>
+                <div> <p class="taskDescription">@post.PostText</p><span class="date sub-text">on @post.PostTime.ToString("MMMM dd, yyyy HH:mm")</span></div>
+                <div class="pull-right">Páver rating: @post.Rateing<a href="/Home/UpVotePost/@post.Id" title="Páver Up"><span class="glyphicon glyphicon-arrow-up"></span></a><a href="/Home/DownVotePost/@post.Id" title="Páver Down"><span class="glyphicon glyphicon-arrow-down"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+        <div class="actionBox well well-sm">
+            <ul class="commentList">
+                @foreach (var comment in post.Replies)
+                {
+                    <li>
+                        <div class="commenterImage">
+                            @if (!String.IsNullOrEmpty(comment.AuthorPhotoFileName))
+                            {
+                                  <img src="@comment.AuthorPhotoFileName" width="30" height="30"/>
+                            }
+                            else
+                            {
+                                <img src="http://lorempixel.com/50/50/people/6" width="30" height="30" />
+                            }
+                        </div>
+                        <div class="commentText">
+                            <label>@Html.ActionLink(comment.Author, "ViewProfile", new { id = comment.AuthorId })</label>
+                            <p class="">@comment.PostText</p> <span class="date sub-text">on @comment.PostTime.ToString("MMMM dd, yyyy HH:mm")</span>
+                        </div>
+                    </li>
+                }
+            </ul>
+            @using (Html.BeginForm("AddComment", "Home", FormMethod.Post, new { id = "sendcomment" }))
+            {
+
+                <input type="hidden" name="postId" value="@post.Id" />
+                <label class="sr-only" for="commenttext">Comment</label>
+                <div class="input-group  style=" width 80%;"">
+                    <input class="form-control input-group-lg" id="commenttext" name="commenttext" placeholder="Comment on this post..." ;>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary pull-right" id="bootButtonOverwrite">Add</button>
+                    </span>
+                </div>
+                @Html.ValidationSummary(false)
+            }
+        </div>
+}

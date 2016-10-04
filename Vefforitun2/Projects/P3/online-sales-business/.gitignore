@@ -1,0 +1,17 @@
+*.sw*
+*~
+bin/
+node_modules/
+src/vendor/
+build/
+coverage/
+typings/
+.tmp/
+.idea/
+.DS_Store
+.grunt/
+_SpecRunner.html
+.idea/
+.build/
+dist/
+npm-debug.log

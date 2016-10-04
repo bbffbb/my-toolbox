@@ -1,0 +1,17 @@
+{
+  "sellers": {
+    "Title": "Seljendur",
+    "Add": "Bæta við seljanda",
+    "Edit": "Breyta seljanda",
+    "NoProducts": "Þessi seljandi hefur engar vörur!",
+    "Table": {
+      "ID": "Auðkenni",
+      "Photo": "Mynd",
+      "Name": "Nafn",
+      "Category": "Flokkur"
+    },
+    "Messages": {
+      "LoadFailed": "Ekki tókst að sækja lista yfir seljendur"
+    }
+  }
+}

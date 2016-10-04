@@ -1,0 +1,22 @@
+{
+  "productDig": {
+    "Image": "Slóð á mynd",
+    "Name": "Nafn",
+    "Sold": "Magn selt",
+    "Stock": "Magn á lager",
+    "Price": "Verð",
+    "OK": "Staðfesta",
+    "Cancel": "Hætta við",
+    "NameValidation": "Það Þarf að gefa vörunni nafn",
+    "PriceValidation": "Það Þarf að gefa vörunni verð",
+    "ProductsSoldValidation" : "Það þarf að taka fram fjölda seldra vara",
+    "ProductsInStockValidation": "Það þarf að gefa fjölda vara á lager",
+    "ProductsImagePathValidation": "Ef það er ekki slegið inn viðfang fær varan sjálfgefna mynd",
+    "Messages": {
+      "updateProductSuccess": "Vara hefur verið uppfærð",
+      "updateProductError": "Því miður mistókst að uppfæra vöru",
+      "saveProductSuccess": "Vara hefur verið vistuð",
+      "saveProductError": "Því miður mistókst að vista nýja vöru"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sellers": {
+    "Title": "Sellers List",
+    "Add": "Add Seller",
+    "Edit": "Edit Seller",
+    "NoProducts": "This seller has no products!",
+    "Table": {
+      "ID": "ID",
+      "Photo": "Photo",
+      "Name": "Name",
+      "Category": "Category"
+    },
+    "Messages": {
+      "LoadFailed": "Failed to load the list of sellers"
+    }
+  }
+}

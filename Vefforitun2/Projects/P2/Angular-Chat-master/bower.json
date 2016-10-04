@@ -1,0 +1,11 @@
+{
+  "name": "angular-chat",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-animate": "latest",
+    "bootstrap": "latest",
+    "angular-route": "latest",
+    "angular-material": "^1.0.5"
+  }
+}

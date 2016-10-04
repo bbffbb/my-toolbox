@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - HR Páver</title>
+    <link rel="shortcut icon" href="https://lh4.googleusercontent.com/wLn-OmaXAqvmuUcdXE5lpOWTfktjerc7E-Quq5xb3iRXFC55H6wxb64xW5yrrBye4D-1dRujBEnSng=w1342-h503" type="image/x-icon" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/FriendList")
+    @Styles.Render("~/Content/footer.css")
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/ui-lightness/jquery-ui.css"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.tabs .tab-links a').on('click', function (e) {
+                var currentAttrValue = $(this).attr('href');
+                // Show/Hide Tabs
+                $('.tabs ' + currentAttrValue).siblings().slideUp(400);
+                $('.tabs ' + currentAttrValue).delay(400).slideDown(400);
+                // Change/remove current tab to active
+                jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+                e.preventDefault();
+            });
+        });
+    </script>
+
+    <link href="~/Content/ViewEvents.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />    
+</head>
+
+<body>
+    <div class="navbar navbar-coloring navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                
+                    <a href='@Url.Action("Index", "Home")'>   
+                    <img src='@Url.Content("~/images/Logoversion3White.png")' />
+                    </a>
+                
+                </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Users", "ViewAllUsers", "Home")</li>
+                    <li>@Html.ActionLink("My Profile", "ViewProfile/CurrentUser", "Home")</li>
+                    <li>@Html.ActionLink("Groups", "Index", "Group")</li>
+                    <li>@Html.ActionLink("Events", "ViewAllEvents", "Event")</li>
+                    <li>@Html.ActionLink("Chat", "Chat", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container maincontent">
+        <div class="body-content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer class="footer-basic-centered">
+        <div class="footer-right">
+     
+        </div>
+
+        <div class="footer-left">
+            <p><b>@DateTime.Now.Year - © HR Páver</b></p>
+        </div>
+
+</footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="ChatJs/js/jquery.autosize.js"></script>
+    <link rel="stylesheet" href="Styles/styles.css"/>
+</body>
+</html>
+

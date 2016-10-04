@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS-Draw</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/toastr/toastr.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/point.js"></script>
+    <script type="text/javascript" src="../js/shape.js"></script>
+    <script type="text/javascript" src="../js/square.js"></script>
+    <script type="text/javascript" src="../js/circle.js"></script>
+    <script type="text/javascript" src="../js/pen.js"></script>
+    <script type="text/javascript" src="../js/line.js"></script>
+    <script type="text/javascript" src="../js/text.js"></script>
+    <script type="text/javascript" src="../js/boundaries.js"></script>
+</head>
+<body>
+    <!--header-->
+    <div class="navbar-inverse">
+        <div class="container">
+            <div class="navbar-header col-md-8">
+                <div class="dropdown btn">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Drawing Tools
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a name="tool" id="circlebutton" value="circle">Circle</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a name="tool" id="squarebutton" value="square">Square</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a name="tool" id="linebutton" value="line">Line</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a name="tool" id="penbutton" value="pen">Pen</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a name="tool" id="textbutton" value="text">Text</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a name="tool" id="selectbutton" value="text">Select</a></li>
+                    </ul>
+                </div>
+                <input type="text" id="textareabutton" value="Insert text here and click on canvas" style="width:300px;" class="hidden" />
+            </div>
+            <div class="btn col-md-4">
+                <button class="btn btn-default" type="button" name="undobutton" id="undobutton" value="undo">Undo</button>
+                <button class="btn btn-default" type="button" name="redobutton" id="redobutton" value="redo">Redo</button>
+                <button class="btn btn-default" type="button" name="clearbutton" id="clearbutton" value="clear">Clear</button>
+                <button class="btn btn-default" type="button" name="save" id="savebutton" value="save">Save</button>
+                <button class="btn btn-default" type="button" name="load" id="loadbutton" value="load">Load Drawing</button>
+            </div>
+        </div>
+    </div>
+
+    <!--main-->
+    <div class="container body-content jumbotron ">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <input type="text" id="username" value="joni12" />
+                    <button class="btn btn-default" id="loadAllbutton">Sign in</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <p style="font:bold 20px arial, verdana">Sketch on the canvas</p>
+                        <input type="color" name="color" id="color" value="#ff0000" />
+                        <input type="number" name="lineWidth" style="width:40px;" min="1" max="200" id="lineWidth" step="1" value="1" placeholder="px" onchange="this.setAttribute('value',this.value);">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Arial <span class="caret"></span>
+                            </button>
+                            <ul id="font-menu" class="dropdown-menu">
+                                <li><a href="#">Arial</a></li>
+                                <li><a href="#">Comic Sans MS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="font:italic 14px verdana">Current Tool:<label id="toolselected">Pen</label></p>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <input type="text" id="drawingID" class="hidden" style="width:auto" value="ID or select from menu" /> <br />
+                        <button class="btn btn-default hidden" id="loadOnebutton">Load One</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="bs-example" data-example-id="simple-table" role="menu" style="height:auto;max-height:600px;overflow-x:hidden;width:auto">
+                        <table class="table table-hover hidden" id="drawingtable">
+                            <caption>Drawings</caption>
+                            <thead>
+                                <tr>
+                                    <th>#ID</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody id="drawings"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <canvas height="600" width="600" id="canvas" style="border:1px solid black; cursor:crosshair; background-color:antiquewhite;"></canvas>
+                </div>
+                <div class="col-md-3">
+                    <!--Empty col for even layout-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="text-center navbar-inverse">
+        <p style="color:white; font-style:italic">Made By <br /> Birkir Freyr Baldursson <br />Jon Reginbald Ivarsson</p>
+    </footer>
+    <!--scripts-->
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/toastr/toastr.min.js"></script>
+
+</body>
+</html>

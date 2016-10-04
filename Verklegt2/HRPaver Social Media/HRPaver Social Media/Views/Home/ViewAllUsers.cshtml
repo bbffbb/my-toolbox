@@ -1,0 +1,195 @@
+﻿@model IEnumerable<HRPaver_Social_Media.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "ViewAllUser";
+}
+
+@{
+    Html.RenderPartial("SearchForm");
+}
+<br />
+    <div class="row">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#tab_a" data-toggle="tab">All Users</a></li>
+            <li role="presentation"><a href="#tab_b" data-toggle="tab">Friends</a></li>
+            <li role="presentation"><a href="#tab_c" data-toggle="tab">Not Friends</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_a">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                Picture
+                            </td>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Email Address
+                            </td>
+                            <td>
+                                Add / Remove friend
+                            </td>
+                        </tr>
+                        @if (Model != null)
+                        { 
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td> 
+                                        @if (item.PhotoPath == "#")
+                                        {
+                                            <img src="http://www.lcfc.com/images/common/bg_player_profile_default_big.png" class="img-thumbnail" alt="Profile Picture Missing" width="75" height="75">
+                                        }
+                                        else
+                                        {
+                                            <img src=@Html.DisplayFor(modelItem => item.PhotoPath) class="img-thumbnail" alt="@item.Name's Photo" title="@item.Name's photo" width="75" height="75" />
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink(item.Name, "ViewProfile", new { id = item.Id })
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+                                    <td>
+                                        @if (item.isFriend == true)
+                                        {
+                                            @Html.ActionLink("Unfriend", "Unfriend", new { id = item.Id })
+
+                                        }
+                                        else
+                                        {
+                                            @Html.ActionLink("Add Friend", "Friend", new { id = item.Id })
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab_b">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                Picture
+                            </td>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Email Address
+                            </td>
+                            <td>
+                                Add / Remove friend
+                            </td>
+                        </tr>
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                if (item.isFriend == true)
+                                {
+                                    <tr>
+                                        <td>
+                                            @if (item.PhotoPath == "#")
+                                            {
+                                                <img src="http://www.lcfc.com/images/common/bg_player_profile_default_big.png" class="img-thumbnail" alt="Profile Picture Missing" width="75" height="75">
+                                            }
+                                            else
+                                            {
+                                                <img src=@Html.DisplayFor(modelItem => item.PhotoPath) class="img-thumbnail" alt="Cinque Terre" width="75" height="75" />
+                                            }
+
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink(item.Name, "ViewProfile", new { id = item.Id })
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Email)
+                                        </td>
+                                        <td>
+                                            @if (item.isFriend == true)
+                                            {
+                                                @Html.ActionLink("Unfriend", "UnFriend", new { id = item.Id })
+                                            }
+                                            else
+                                            {
+                                                @Html.ActionLink("Add Friend", "Friend", new { id = item.Id })
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab_c">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                Picture
+                            </td>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Email Address
+                            </td>
+                            <td>
+                                Add / Remove friend
+                            </td>
+                        </tr>
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                if (item.isFriend == false)
+                                {
+                                    <tr>
+                                        <td>
+                                            @if (item.PhotoPath == "#")
+                                            {
+                                                <img src="http://www.lcfc.com/images/common/bg_player_profile_default_big.png" class="img-thumbnail" alt="Profile Picture Missing" width="75" height="75">
+                                            }
+                                            else
+                                            {
+                                                <img src=@Html.DisplayFor(modelItem => item.PhotoPath) class="img-thumbnail" alt="Cinque Terre" width="75" height="75" />
+                                            }
+
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink(item.Name, "ViewProfile", new { id = item.Id })
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Email)
+                                        </td>
+                                        <td>
+                                            @if (item.isFriend == true)
+                                            {
+                                                @Html.ActionLink("Unfriend", "UnFriend", new { id = item.Id })
+                                            }
+                                            else
+                                            {
+                                                @Html.ActionLink("Add Friend", "Friend", new { id = item.Id })
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                         

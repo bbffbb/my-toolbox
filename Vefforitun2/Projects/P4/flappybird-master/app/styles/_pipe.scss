@@ -1,0 +1,67 @@
+.Pipe {
+    // Absolutely position entities at 0,0 and use transform to
+    // move it around.
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: em(100px);
+    height: em(576px);
+
+    //background: #9b59b6;
+
+    transform: translateZ(0);
+
+		&_base{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-image: url("../img/pipe-mid.png");
+			background-size: 100%;
+		}
+
+		&_upper{
+			width: 100%;
+	    height: em(50px);
+			//background: #e74c3c;
+			overflow: hidden;
+    	position: relative;
+
+			&-cap{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				height: em(96px);
+				width: 100%;
+				//background: #e74c3c;
+				background-image: url("../img/pipe-top.png");
+				background-size: 100%;
+			}
+		}
+
+		&_gap{
+			width: 100%;
+	    height: em(150px);
+			//background: #2ecc71;
+		}
+
+		&_lower{
+			width: 100%;
+	    height: em(50px);
+			//background: #e74c3c;
+			overflow: hidden;
+    	position: relative;
+
+			&-cap{
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: em(96px);
+				width: 100%;
+				//background: #e74c3c;
+				background-image: url("../img/pipe-bot.png");
+				background-size: 100%;
+			}
+		}
+}

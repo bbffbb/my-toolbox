@@ -1,0 +1,52 @@
+﻿@model IEnumerable<HRPaver_Social_Media.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Found Users";
+}
+
+<h2>Found Users</h2>
+        <table class="table">
+            <tr>
+                <td>
+                    Picture
+                </td>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Email Address
+                </td>
+                <td>
+                    Add / Remove friend
+                </td>
+            </tr>
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src=@Html.DisplayFor(modelItem => item.PhotoPath) class="img-thumbnail" alt="@item.Name's photo" title="@item.Name's photo" width="75" height="75" />
+                        </td>
+                        <td>
+                            @Html.ActionLink(item.Name, "ViewProfile", new { id = item.Id })
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @if (item.isFriend == true)
+                            {
+                                @Html.ActionLink("Unfriend", "Unfriend", new { id = item.Id })
+
+                            }
+                            else
+                            {
+                                @Html.ActionLink("Add Friend", "Friend", new { id = item.Id })
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+

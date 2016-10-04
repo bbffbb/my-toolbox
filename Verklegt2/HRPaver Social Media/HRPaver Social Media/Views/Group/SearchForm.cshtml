@@ -1,0 +1,10 @@
+﻿@using (Html.BeginForm("SearchGroups", "Group", FormMethod.Get))
+{
+    <div class="input-group">
+        @Html.TextBox("searchTerm", "", new { @class = "form-control input-sm", @placeholder = "Search group here...", @rows = 10, @align = "right" })
+
+        <span class="input-group-btn">
+            <input class="btn btn-warning btn-sm pull-left" type="submit" value="Search" id="send" />
+        </span>
+    </div>                
+}

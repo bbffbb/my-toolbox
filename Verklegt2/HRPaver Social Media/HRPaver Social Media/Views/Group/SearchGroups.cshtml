@@ -1,0 +1,60 @@
+﻿@model IEnumerable<HRPaver_Social_Media.Models.GroupViewModel>
+
+<h4>Groups</h4>
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>
+                Picture
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Join Group
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+                <tr>
+                    <td>
+                        <img src=@Html.DisplayFor(modelItem => item.photoPath) class="img-thumbnail" alt="@item.Name's photo" title="@item.Name's photo" width="75" height="75" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @if (item.Type == "1")
+                        {
+                            <text>Public</text>
+                        }
+                        else if(item.Type == "2")
+                        {
+                            <text>Closed</text>
+                        }
+                        else if(item.Type == "3")
+                        {
+                            <text>Private</text>
+                        }
+                        else
+                        {
+                            <text>Course</text>
+                        }
+                    </td>
+                    <td>
+                        @Html.ActionLink("Join Group", "join", new { id = item.Id })
+                    </td>
+                </tr>
+        }
+    </table>
+</div>

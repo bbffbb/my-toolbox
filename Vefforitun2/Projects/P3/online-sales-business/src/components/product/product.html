@@ -1,0 +1,14 @@
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+    <img ng-src="{{product.imagePath || 'http://www.anselmacademic.org/Images%5CAuthorImages%5Cno-image-available.jpg'}}" alt="{{product.name}}" style="width:300px; height:300px; border:1px solid black">
+    <div class="caption">
+      <h3>{{product.name}}</h3>
+      <p><span translate="product.Price"></span>: {{product.price}}</p>
+      <p><span translate="product.Sold"></span>: {{product.quantitySold}}</p>
+      <p><span translate="product.InStock"></span>: {{product.quantityInStock}}</p>
+      <p>
+          <product-dig sid="sid" product="product"><span translate="product.Edit">Edit Product</span></product-dig>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,154 @@
+
+/*body fonts*/
+body
+{
+    font:12px arial, verdana;
+}
+
+/*header begins*/
+.image
+{
+    height:50px;
+    background-color:white;
+    border-bottom:2px solid gray;
+    text-align:right;
+    padding-bottom:10px;
+    padding-right:182px;
+}
+.header
+{
+    height:150px;
+    background-color:rgb(240, 240, 240);
+    border-bottom:2px solid gray;
+    border-left:hidden;
+    border-right:hidden;
+    border-top:hidden;
+    
+}
+
+h1
+{
+    margin-left:170px;
+    padding-top:13px;
+   
+}
+/*header ends*/
+
+/*article begins*/
+.article
+{
+    height:150px;
+    width:619px;
+    float:left;
+    padding-top:30px;
+    margin-left:30px;
+    padding-bottom:10px;
+    font-size:14px;
+}
+/*article ends*/
+
+/*main content begins*/
+
+.main
+{
+    height: 600px;
+    width: 1030px;
+    
+}
+.content
+{
+    height:540px;
+    width:655px;
+    float:left;
+    margin-left:72px; 
+    text-align:left;   
+}
+
+form
+{
+    margin-left:30px;
+}
+
+table
+{
+    width:95%;
+    margin-top:15px;
+    border:1px solid black;
+    border-collapse:collapse;
+    margin-left:29px;
+}
+
+th, td
+{
+    border-bottom:1px solid black;
+    padding:5px;
+}
+
+.colorintable
+{
+    color:red;
+    font-weight:bold;
+}
+/*main content ends*/
+
+/*navigation menu begins*/
+.nav
+{
+    height:500px;
+    float: left;
+    width: 366px;
+    margin-right:-72px;
+    padding-top:40px;
+    font-size:16px;
+}
+
+ul
+{
+    color:black;
+    margin-left:128px;
+    list-style-type:none;
+}
+
+.linkur:link, .linkur:visited
+{
+    text-decoration:none;
+    color:black;
+}
+
+.linkur:active 
+{
+    color:rgb(191, 34, 37);
+    text-decoration:none;
+}
+
+.linkur:hover
+{
+    background-image: url(check.png);
+    background-size:20px;
+    background-repeat: no-repeat;
+    padding-left:20px;
+    color:rgb(191, 34, 37);
+    font-weight:bold;
+    text-decoration:none;
+}
+/*navigation menu ends*/
+
+/*footer begins*/
+.footer
+{
+    padding-top:15px;
+    height:112px;
+    border-top:2px solid gray;
+}
+
+pre
+{
+    margin-left:170px;
+}
+
+.email:link
+{
+    color:red;
+    text-decoration:none;
+}
+/*footer ends*/

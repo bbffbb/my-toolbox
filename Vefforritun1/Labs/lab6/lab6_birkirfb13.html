@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lab6</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .news 
+        {
+            color: blue;
+        }
+
+        .latest 
+        {
+            background: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>1. Click the link to display an alert box: <a href="#" onclick="myFunction()">TRY IT!</a> </p>
+
+    <p>2. Click <a href="javascript:HideShowContent('texti')">HERE!</a> to hide or show content.</p>
+
+    <div id="texti" style="display:none;">
+        <p>Hello World! .. this could be another way to show content.</p>
+    </div>
+
+    <p>3. Click the <a href="javascript:HideShowContent('LoremIpsum')">LINK!</a> to hide or show the Lorem Ipsum text.</p>
+
+    <div id="LoremIpsum" style="display:block;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+
+    <p>4. Function declaring <a href="#" onclick="Mathcalc()">Cheesy</a> </p>
+
+    <p>5. Form calculator</p>
+
+    <form action="action_page.php">
+        First number:<br>
+        <input type="number" id="first" name="firstnumber" value="0">
+        <br>
+        Second number:<br>
+        <input type="number" id="second" name="secondnumber" value="0">
+        <br><br>
+        <input type="button" onclick="Mathcalc(firstnumber, secondnumber)" value="Calculate">
+    </form>
+
+    
+
+    <div class="news">
+        <p>Hello</p>
+    </div>
+    <div class="news">
+        <p>Hello</p>
+    </div>
+    <div class="news">
+        <p>Hello</p>
+    </div>
+    <div class="news">
+        <p>Hello</p>
+    </div>
+    <div class="news">
+        <p>Hello</p>
+        <p>World</p>
+    </div>
+
+    <p>Date: <input type="text" id="datepicker"></p>
+
+    <script> 
+        $().ready(function () {
+            $(".news").addClass("latest");
+            $("#datepicker").datepicker({changeMonth: true, changeYear: true});
+        });
+    </script> 
+
+
+    <script>
+        
+    function Mathcalc(x, y)
+    {
+        if (x == null && y == null)
+        {
+            var numberOne = 1336;
+            var numberTwo = 1;
+
+            return alert(numberOne + numberTwo);
+        }
+        
+        else
+        {
+            var numberOne = parseInt(document.getElementById("first").value);
+            var numberTwo = parseInt(document.getElementById("second").value);
+
+            return alert(numberOne + numberTwo);
+        }
+    }
+
+    function HideShowContent(value)
+    {
+        if (document.getElementById(value).style.display == "none")
+        {
+            document.getElementById(value).style.display = "block";
+        }
+        else
+        {
+            document.getElementById(value).style.display = "none";
+        }
+    }
+
+    function myFunction()
+    {
+        alert("Hello World!");
+    }
+
+    </script>
+    
+    </body>
+    </html>

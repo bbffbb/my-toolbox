@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>html5 game new</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+				<audio autoplay loop class="audio_music">
+            <source src="audio/music.mp3" type="audio/mpeg">
+        </audio>
+				<audio class="audio_game-over">
+            <source src="audio/game_over.wav" type="audio/wav">
+        </audio>
+        <audio class="audio_point">
+            <source src="audio/point.wav" type="audio/wav">
+        </audio>
+
+        <div class="GameCanvas">
+						<div class="Background"></div>
+            <div id="pipe1" class="Pipe">
+							<div class="Pipe_upper">
+								<div class="Pipe_base"></div>
+								<div class="Pipe_upper-cap"></div>
+							</div>
+							<div class="Pipe_gap"></div>
+							<div class="Pipe_lower">
+								<div class="Pipe_base"></div>
+								<div class="Pipe_lower-cap"></div>
+							</div>
+						</div>
+            <div id="pipe2" class="Pipe">
+							<div class="Pipe_upper">
+								<div class="Pipe_base"></div>
+								<div class="Pipe_upper-cap"></div>
+							</div>
+							<div class="Pipe_gap"></div>
+							<div class="Pipe_lower">
+								<div class="Pipe_base"></div>
+								<div class="Pipe_lower-cap"></div>
+							</div>
+						</div>
+						<div class="Player"></div>
+						<div class="Ceiling"></div>
+						<div class="Ground"></div>
+            <div class="controls">
+              <button id="muteMusic" class="button">
+  								<span class="button-text">Music</span>
+  						</button>
+  						<button id="muteSFX" class="button">
+  								<span class="button-text">SFX</span>
+  						</button>
+            </div>
+            <div class="score">0</div>
+
+            <div class="Scoreboard">
+              <p class="Scoreboard-text">Your score:</p>
+              <div class="Scoreboard-score">0</div>
+              <p class="Scoreboard-text">Top score:</p>
+              <div class="Scoreboard-top-score">0</div>
+                <button class="Scoreboard-restart">
+                    <span class="Scoreboard-restartText">Restart</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/controls.js"></script>
+        <script src="scripts/game.js"></script>
+        <script src="scripts/player.js"></script>
+        <script src="scripts/pipe.js"></script>
+        <script src="scripts/utils.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

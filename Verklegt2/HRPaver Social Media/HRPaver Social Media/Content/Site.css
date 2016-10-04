@@ -1,0 +1,228 @@
+﻿body {
+    padding-top: 50px;
+    background-color: #ffefe4;
+}
+
+body a{
+     color: #dd5d00;
+}
+
+maincontent {
+    width:70%;
+}
+
+.navbar-coloring {
+    background-color: #FF8228;
+    border-bottom: 1px solid #dd5d00;
+}
+
+ .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+    color: #fff;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.49);
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.49);
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 100%;/*280*/
+}
+
+
+.register-control {
+  display: block;
+  width: 81%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 34px;
+  padding: 0px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+
+
+/*FRIEND LIST BY THE RIX*/
+
+
+.friend-separation{
+    font-size: 20px;
+    background-color: #BCBCBC;
+    width:50%;
+}
+
+.friend-info{
+    position: relative;
+    float: left;
+    background-color: #BCBCBC;
+    width: 70%;
+    margin-bottom: 20px;
+    height: 90px;
+    padding-left:2px;
+}
+
+.friend-button{
+    width: 30%;
+    height: 90px;
+    float: right;
+    position:relative;
+    margin-bottom: 20px;
+    background-color: #BCBCBC;
+}
+
+
+
+#friend-line{
+    border: none;
+    height: 7px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+    float: left;
+    width: 50%;
+}
+
+
+
+
+.friend-button-btn {
+    margin-top: 2px;
+    margin-right: 2px;
+    font-size: 24px;
+    float:right;
+    
+    border-color: red;
+    height: 35px;
+    color: rgba(0,0,0,0.8);
+
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background-color: #ED8C65;
+
+}
+
+.friend-button-btn:hover {
+    float: right;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    background-color: #D36637;
+}
+
+/* friendlist end*/
+
+/*   index home stati     */
+
+.post-input{
+
+    width:100%;
+}
+
+.post-input textarea{
+
+    width: 100%;
+    resize: none;
+    font-size: 18px;
+
+}
+
+.footer {
+    position: relative;
+    bottom:0;
+    width: 100%;
+    height: 25px;
+}
+
+#bootButtonOverwrite{
+    background-color: #DE8A38;
+    border-color: #955E29;
+}
+
+ .navbar-nav > li > a:focus, .navbar-nav > li >a:hover {
+    background-color: rgb(233, 66, 54);
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: rgb(233, 66, 54);
+    border-color: #337ab7;
+}
+
+  .navbar-nav .open .dropdown-menu > li > a{
+    background-color: #E57454;
+    color: white;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #E86037;
+  }
+
+.dropdown-menu{
+    background-color: #E57454;
+}
+
+.chatbox-inner{
+    overflow-y:scroll;
+    width: 100%;
+    height: 400px;
+}
+
+
+a.hrlogo
+{
+    background: url(~\Images\Logoversion3.png) no-repeat top left;
+     display: block;
+     width: 150px;
+     height: 150px;
+     text-indent: -9999px; /* hides the link text */
+}
+
+.icon-bar{
+    background-color: #FF8228;
+}
+.navbar-toggle
+{
+    background-color: rgb(233, 66, 54);
+}
+
+#photoDiv {
+    width: 300px;
+    float: left;
+}
+
+#profileInfo {
+    width: 60%;
+    float: left;
+}

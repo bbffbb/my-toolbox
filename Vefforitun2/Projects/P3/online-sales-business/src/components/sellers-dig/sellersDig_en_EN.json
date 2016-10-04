@@ -1,0 +1,18 @@
+{
+  "sellersDig": {
+    "Image": "Image Url",
+    "Name": "Name",
+    "Category": "Category",
+    "OK": "OK",
+    "Cancel": "Cancel",
+    "NameValidation": "You're name is required",
+    "CategoryValidation": "You must select a category",
+    "LogoPathValMessage": "If no image url is provided default image is inserted",
+    "Messages": {
+      "SaveSucceeded": "The seller has been added successfully",
+      "SaveFailed": "Unfortunately we could not add a new seller",
+      "UpdateSucceeded": "The seller has been updated successfully",
+      "UpdateFailed": "Unfortunately we could not update the seller"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\HRPaver Social Media.dll.config
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\HRPaver Social Media.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\HRPaver Social Media.pdb
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Antlr3.Runtime.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\EntityFramework.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\EntityFramework.SqlServer.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Newtonsoft.Json.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Owin.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Helpers.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Mvc.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Optimization.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Razor.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.WebPages.Deployment.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.WebPages.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.WebPages.Razor.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\WebGrease.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Antlr3.Runtime.pdb
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\EntityFramework.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\EntityFramework.SqlServer.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\Newtonsoft.Json.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Helpers.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Mvc.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Razor.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.WebPages.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.WebPages.Deployment.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.WebPages.Razor.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\bin\System.Web.Optimization.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\obj\Debug\HRPaver Social Media.csprojResolveAssemblyReference.cache
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\obj\Debug\HRPaver Social Media.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Social Media\obj\Debug\HRPaver Social Media.pdb

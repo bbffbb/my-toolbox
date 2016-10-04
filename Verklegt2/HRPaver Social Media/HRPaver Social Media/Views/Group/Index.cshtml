@@ -1,0 +1,126 @@
+﻿@model Tuple<List<HRPaver_Social_Media.Models.GroupViewModel>, List<HRPaver_Social_Media.Models.GroupViewModel>>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/ViewGroups.css" rel="stylesheet" />
+
+@{
+    Html.RenderPartial("SearchForm");
+}
+<br />
+<p>
+    @Html.ActionLink("Create New Group", "CreateNewGroup")
+</p>
+<br />
+<div class="row">
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#tab_a" data-toggle="tab">My Groups</a></li>
+        <li role="presentation"><a href="#tab_b" data-toggle="tab">Groups</a></li>
+    </ul>
+</div>
+    <div class="row">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_a">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Picture
+                            </th>
+                            <th>
+                                Group Name
+                            </th>
+                            <th>
+                                Group Description
+                            </th>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Leave / Join Group
+                            </th>
+                        </tr>
+                        @foreach (var item in Model.Item1)
+                        {
+                            <tr>
+                                <td>
+                                    <img src=@Html.DisplayFor(modelItem => item.photoPath) class="img-thumbnail" alt="@item.Name's photo" title="@item.Name's photo" width="75" height="75" />
+                                </td>
+                                <td>
+                                    @Html.ActionLink(item.Name, "detail", new { id = item.Id })
+                                </td>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    @if (item.Type == "1")
+                                    {
+                                        <text>Public</text>
+                                    }
+                                    else if (item.Type == "2")
+                                    {
+                                        <text>Closed</text>
+                                    }
+                                    else if (item.Type == "3")
+                                    {
+                                        <text>Private</text>
+                                    }
+                                    else
+                                    {
+                                        <text>Course</text>
+                                    }
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Leave Group", "LeaveGroup", new { id = item.Id })
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab_b">
+                <div class="table-responsive">
+                    @foreach (var item in Model.Item2)
+                    {
+                        <div class="group-float">
+                            <div class="group-photo">
+                                <img src="@item.photoPath" width="100" height="100" class="img-rounded"/>
+                            </div>
+                            <div class="group-title-name">
+                                @item.Name
+                            </div>
+                            <div class="group-type">
+                                @if (item.Type == "1")
+                                {
+                                    <text>Public</text>
+                                }
+                                else if (item.Type == "2")
+                                {
+                                    <text>Closed</text>
+                                }
+                                else if (item.Type == "3")
+                                {
+                                    <text>Private</text>
+                                }
+                                else
+                                {
+                                    <text>Course</text>
+                                }
+                            </div>
+                            <div class="group-description">
+                                @item.Description
+                            </div>
+
+                            <div class="group-button">
+                                @Html.ActionLink("Join Group", "JoinGroup", new { id = item.Id })
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

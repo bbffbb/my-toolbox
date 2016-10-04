@@ -1,0 +1,34 @@
+<loading-message ng-show="isLoading"></loading-message>
+<table class="table" ng-show="!isLoading">
+  <caption translate="sellers.Title">Sellers List</caption>
+  <thead>
+    <tr table-sort="id">
+      <th translate="sellers.Table.ID" data-columnName="id">
+        ID
+      </th>
+      <th translate="sellers.Table.Photo" data-columnName="photo">
+        Photo
+      </th>
+      <th translate="sellers.Table.Name" data-columnName="name">
+        Name
+      </th>
+      <th translate="sellers.Table.Category" data-columnName="category">
+        Category
+      </th>
+      <th>
+        <sellers-dig><span translate="sellers.Add">Add Seller</span></sellers-dig>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="s in sellers | orderBy:predicate:reverse" title="{{ 'sellers.NoProducts' | translate }}" data-toggle="tooltip" tooltip="{{s.numberOfProducts}}" >
+      <td> {{s.id}} </td>
+      <td><img ng-src="{{s.imagePath || 'http://www.anselmacademic.org/Images%5CAuthorImages%5Cno-image-available.jpg'}}" border=3 height=100 width=100></img></td>
+      <td ng-click="sellerPage(s.id)">{{s.name}}</td>
+      <td> {{s.category}}</td>
+      <td>
+        <sellers-dig seller="s"><span translate="sellers.Edit">Edit Seller</span></sellers-dig>
+      </td>
+    </tr>
+  </tbody>
+</table>

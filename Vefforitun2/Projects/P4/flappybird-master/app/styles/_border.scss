@@ -1,0 +1,45 @@
+.Ground {
+		position: absolute;
+		bottom: 0;
+		width: 120%;
+		height: 2.5em;
+		background-image: url("../img/ground.png");
+		background-size: auto 100%;
+		background-position: 0px 0px;
+		background-repeat: repeat-x;
+		transform: translateX(0);
+		transform: translateZ(0);
+		animation: ground 0.083s linear infinite;
+}
+
+.Ceiling {
+		position: absolute;
+		top: 0;
+		width: 120%;
+		height: 2.5em;
+		background-image: url("../img/ceiling.png");
+		background-size: auto 100%;
+		background-position: 0px 0px;
+		background-repeat: repeat-x;
+
+		transform: translateX(0);
+
+		transform: translateZ(0);
+		transform: rotate(180deg);
+		animation: ceiling 0.083s linear infinite;
+}
+
+@keyframes ceiling {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-2.5em);
+	}
+}
+
+
+@keyframes ground {
+	from { transform: translateX(0); }
+	to { transform: translateX(-2.5em); }
+}

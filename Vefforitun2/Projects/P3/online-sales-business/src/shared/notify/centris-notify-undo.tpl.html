@@ -1,0 +1,17 @@
+<div class="{{toastClass}} {{toastType}}" ng-click="tapToast()">
+	<!-- Note: basically the same template as the default template,
+	     but with an added "Undo" button. Note: we don't assume that
+	     there will be any need for custom HTML in the title/message,
+	     so that support has been removed. -->
+	<div class="{{titleClass}}"
+		translate="AppTitle">
+	</div>
+	<div class="{{messageClass}}">
+		{{title}}
+	</div>
+	<div>
+		<a class="centris-notify-undo pull-right"
+			ng-click="centrisUndo(message.type, message.id)"
+			translate="Undo" />
+	</div>
+</div>

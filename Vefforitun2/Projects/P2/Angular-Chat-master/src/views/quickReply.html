@@ -1,0 +1,31 @@
+<md-dialog aria-label="Quick reply">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Quick reply</h2>
+            <span flex></span>
+            <md-button aria-label="close" class="md-icon-button" ng-click="cancel()">
+                <span class="btn btn-lg glyphicon glyphicon-remove"></span>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content style="width:800px; height:810px; ">
+        <md-content class="md-padding">
+            <div class="overview">
+                <div class="row">
+                    <div id="chatwindow" class="panel panel-default">
+                        <div class="panel-body" id="messageslist">
+                            <dl ng-repeat='(key,val) in privateMsg[privateUser] track by $index'>
+                                <dt>{{val.timestamp | date}} - {{val.nick}} </dt>
+                                <dd>-{{val.message}}</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </md-content>
+    </md-dialog-content>
+    <md-dialog-actions>
+        <input flex="80" type="text" class="form-control" placeholder="Message" required ng-model="Message">
+        <button flex="20" type="submit" class="form-control btn btn-default" ng-click="sendMsg(Message)">Send</button>
+    </md-dialog-actions>
+</md-dialog>

@@ -1,0 +1,80 @@
+<div class="chat-frame" flex="" layout="row">
+    <div layout="row" flex="" layout-padding="" layout-fill="" layout-align="center" class="ng-scope">
+        <div flex="70" flex-lg="50" flex-md="70" flex-sm="100">
+            <md-toolbar md-scroll-shrink>
+                <div class="md-toolbar-tools">
+                    <h1> Private chat with: <label>{{selectedUser}}</label> </h1>
+                    <span flex></span>
+                    <md-button class="" ng-click="logOut()">
+                        <span class="btn btn-lg glyphicon glyphicon-log-out"></span>
+                        <md-tooltip md-direction="left">
+                            Log Out
+                        </md-tooltip>
+                    </md-button>
+                </div>
+            </md-toolbar>
+            <md-card>
+                <md-subheader class="md-no-sticky">
+                    <span flex></span>
+                    <md-button class="md-primary" ng-click="leave()">
+                        <span class="btn btn-lg glyphicon glyphicon-home"></span>
+                        <md-tooltip md-direction="down">
+                            Leave room
+                        </md-tooltip>
+                    </md-button>
+                </md-subheader>
+                <md-divider>  </md-divider>
+                <div flex layout="row">
+                    <md-sidenav flex="30" md-is-locked-open="true" class="md-whiteframe-z1">
+                        <md-subheader class="md-no-sticky">User list</md-subheader>
+                        <md-content style="height:450px">
+                            <md-list>
+                                <md-list-item class="md-3-line" ng-if="currentUser !== user" ng-click="selectUser(user)" ng-repeat='user in users track by $index'>
+                                    <div class="md-list-item-text" layout="column">
+                                        <md-divider>  </md-divider>
+                                        <h3><span class="btn btn-lg glyphicon glyphicon-piggy-bank"></span> {{ user }} </h3>
+                                    </div>
+                                </md-list-item>
+                            </md-list>
+                        </md-content>
+                    </md-sidenav>
+                    <div layout="column" flex="70">
+                        <div layout="row" flex>
+                            <md-content style="height:350px" flex>
+                                <md-list>
+                                    <md-list-item class="md-3-line" ng-if="currentUser !== val" ng-click="setPrivate(val)" ng-repeat='message in messages[selectedUser] track by $index'>
+                                        <div class="md-list-item-text" layout="column">
+                                            <md-divider>  </md-divider>
+                                            <h3><span class="btn btn-lg glyphicon glyphicon-piggy-bank"></span> <label>{{ message.nick }}: </label>{{ message.message }}</h3>
+                                            <p>
+                                                {{message.timestamp | date}}
+                                            </p>
+                                        </div>
+                                    </md-list-item>
+                                </md-list>
+                            </md-content>
+                        </div>
+                        <div layout="row" flex>
+                            <md-divider>  </md-divider>
+                            <md-content flex>
+                                <form name="input">
+                                    <md-input-container layout="row" layout-align="center">
+                                        <label>Message</label>
+                                        <input name="Message" ng-model="Message" type="text" required>
+                                    </md-input-container>
+                                    <div class="md-actions" layout="column" layout-align="center">
+                                        <md-button class="md-raised md-primary" type="submit" layout="row" layout-align="center center" ng-disabled="input.$invalid" ng-click="sendMsg(Message)">
+                                            Send message
+                                        </md-button>
+                                    </div>
+                                </form>
+                            </md-content>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+    </div>
+</div>
+
+

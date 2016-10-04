@@ -1,0 +1,19 @@
+<loading-message ng-show="isLoading"></loading-message>
+<div ng-show="!isLoading" class="row no-gutter">
+    <div class="col-md-6">
+        <seller-details seller="seller"></seller-details>
+    </div>
+    <div class="col-md-6">
+        <product-dig class="pull-right" products="products" sid="sellerId"><span translate="seller.Add">Add Product</span></product-dig>
+    </div>
+</div>
+<div ng-show="!isLoading" class="row seller-tabs">
+  <uib-tabset active="activeJustified" justified="true">
+    <uib-tab heading="{{ 'seller.AllProducts' | translate }}">
+      <products-tab sid="sellerId" products="products"/>
+    </uib-tab>
+    <uib-tab heading="{{ 'seller.TopProducts' | translate }}">
+      <top-products-tab sid="sellerId" products="products"/>
+    </uib-tab>
+  </uib-tabset>
+</div>

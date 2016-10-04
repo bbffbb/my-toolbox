@@ -1,0 +1,75 @@
+﻿@model HRPaver_Social_Media.Models.RegisterViewModel
+
+
+<link href="~/Content/UserForms.css" rel="stylesheet" />
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div>
+    <div class="register-card">
+        <div class="form-horizontal">
+            
+            <h1>Register new user</h1>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            
+            <div class="form-group">
+
+                <div>
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "register-control", placeholder = "Enter your full name" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div>
+                
+                <div class="form-group">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "register-control", placeholder = "yourmail@RU.is" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               
+                <div>
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "register-control", placeholder = "Enter your password" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                
+                <div>
+                    @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "register-control", placeholder = "Confirm password" } })
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               
+                <div>
+                    @Html.EditorFor(model => model.BirthDate, new { htmlAttributes = new { @class = "register-control", placeholder = "Birth Day (dd/mm/yyyy)" } })
+                    @Html.ValidationMessageFor(model => model.BirthDate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            
+            <div class="centerRikk">
+                <input type="submit" value="Register user" class="register-submit" />
+           
+            </div>
+            
+        </div>
+        
+        </div>
+    </div>
+}
+    
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

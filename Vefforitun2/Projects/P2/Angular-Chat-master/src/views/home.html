@@ -1,0 +1,59 @@
+<div class="chat-frame" flex="" layout="row">
+    <div layout="row" flex="" layout-padding="" layout-fill="" layout-align="center" class="ng-scope">
+        <div flex="70" flex-lg="50" flex-md="70" flex-sm="100">
+            <md-toolbar md-scroll-shrink>
+                <div class="md-toolbar-tools">
+                    <span>{{title}}</span>
+                    <span flex></span>
+                    <md-button class="" ng-click="logOut()">
+                        <span class="btn btn-lg glyphicon glyphicon-log-out"></span>
+                        <md-tooltip md-direction="left">
+                            Log Out
+                        </md-tooltip>
+                    </md-button>
+                </div>
+            </md-toolbar>
+            <md-card>
+                <div flex layout="row">
+                    <div layout="column" flex>
+                        <md-subheader class="md-no-sticky">
+                            <span flex></span>
+                            <md-button class="md-primary" ng-click="create()">
+                                <span class="btn btn-lg glyphicon glyphicon-new-window"></span>
+                                <md-tooltip md-direction="down">
+                                    Create new room
+                                </md-tooltip>
+                            </md-button>
+                            <md-button class="md-primary" ng-click="goPrivate()">
+                                <span class="btn btn-lg glyphicon glyphicon-user"></span>
+                                <md-tooltip md-direction="down">
+                                    Open private chat
+                                </md-tooltip>
+                            </md-button>
+                            <md-divider>  </md-divider>
+                        </md-subheader>
+                        <div layout-padding>
+                            <label>Avalable Rooms</label>
+                        </div>
+                        <md-content style="height:450px">
+                            <md-list layout-padding>
+                                <md-list-item class="md-3-line" ng-repeat='(key,val) in rooms track by $index'>
+                                    <div class="md-list-item-text" ng-if="!isBanned(key)" ng-click="goToRoom(key)">
+                                        <h3>Name: {{key}} <span ng-if="val.locked" class="glyphicon glyphicon-lock"> </span></h3>
+                                        <h4>Topic: {{val.topic}}</h4>
+                                        <p>
+                                            Number of users in chat: {{countUsers(val.users)}}
+                                        </p>
+                                    </div>
+                                    <md-divider inset=""></md-divider>
+                                </md-list-item>
+                            </md-list>
+                        </md-content>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+    </div>
+</div>
+
+

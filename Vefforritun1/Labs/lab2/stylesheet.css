@@ -1,0 +1,54 @@
+body {
+	font-family: Arial, "Times New Roman", Times, serif;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1 {
+	color:white;
+	background:rgb(15, 79, 122);
+	padding:20px;
+}
+
+span {
+	margin-left:15px;
+}
+
+h2 {
+	padding-top:20px;
+	border-top: 2px solid;
+	border-color:rgb(15, 79, 122);
+}
+
+dl {
+	font-style: italic;
+}
+
+ol {
+	list-style-type: lower-alpha;
+}
+
+table {
+	
+	border-collapse: collapse;
+	margin: auto;
+	width: 600px;	
+}
+
+th {
+	background-image:linear-gradient(rgb(30, 90, 130), white 120%);
+  	font-weight: bold;
+	text-align: left;
+	color: white;
+}
+
+td {
+	border-bottom: 1px solid;
+	border-color:lightgray;
+	text-align: left;
+}
+
+tr.litur {
+	background:rgb(226, 235, 241);
+}
+

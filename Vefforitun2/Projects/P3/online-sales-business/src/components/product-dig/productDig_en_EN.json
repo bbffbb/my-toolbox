@@ -1,0 +1,22 @@
+{
+  "productDig": {
+    "Image": "Image Url",
+    "Name": "Name",
+    "Sold": "Quantity Sold",
+    "Stock": "Quantity In Stock",
+    "Price": "Price",
+    "OK": "OK",
+    "Cancel": "Cancel",
+    "NameValidation": "Name for the product must be specified",
+    "PriceValidation": "Price is required",
+    "ProductsSoldValidation" : "Quantities for sold products is required",
+    "ProductsInStockValidation": "Avalable products in stock is required",
+    "ProductsImagePathValidation": "If no url is specified then the product will get default photo",
+    "Messages": {
+      "updateProductSuccess": "The product has been updated successfully",
+      "updateProductError": "Unfortunately we could not update the product",
+      "saveProductSuccess": "The product has been added successfully",
+      "saveProductError": "Unfortunately we could not add a new product"
+    }
+  }
+}

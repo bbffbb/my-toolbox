@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="project3App">
+<head>
+	<title>WEPO Assignment 3 - Online Web Store</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/vendor.css">
+	<link rel="stylesheet" href="styles/app.css">
+</head>
+<div class="container">
+	<p>Hidden message</p>
+	<p>Hidden message</p>
+</div>
+<div class="container">
+	<div class="row">
+		<main class="container-fluid">
+			<div class="Main clearfix" ng-view id="content"></div>
+			<navigation-bar><navigation-bar/>
+		</main>
+	</div>
+</div>
+<toaster-container></toaster-container>
+<!-- inject:vendor:js -->
+<!-- endinject -->
+
+<!-- inject:app:js -->
+<!-- endinject -->
+
+<!-- inject:templates:js -->
+<!-- endinject -->
+</body>
+</html>

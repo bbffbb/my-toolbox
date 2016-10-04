@@ -1,0 +1,22 @@
+﻿@model IEnumerable<NewsApplication.Models.NewsItem>
+
+
+<div>
+    <h1>Latest News</h1>
+        <hr />
+</div>
+@foreach (var item in Model)
+{
+<div class="well">
+    <div>
+        <ul style="padding-left:inherit">
+            <li style="list-style-type:none">
+                <span class="h2">@Html.ActionLink(item.Title, "Edit", new { id = item.Id })</span>
+                <p class="pull-right">@item.DateCreated <span class="glyphicon glyphicon-time"></span></p>
+                      <p>@item.Text </p>
+                      <p style="font-weight:bold">News Category : @item.Category </p>
+            </li>
+        </ul>
+    </div>
+</div>
+}

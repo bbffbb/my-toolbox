@@ -1,0 +1,11 @@
+{
+  "seller": {
+    "Add": "Bæta við vöru",
+    "AllProducts": "Allar Vörur",
+    "TopProducts": "Topp Vörur",
+    "Messages": {
+      "LoadSellerDetailsFailed": "Því miður tókst ekki að sækja upplýsingar um seljanda",
+      "LoadProductsFailed": "Því miður tókst ekki að sækja vörur seljanda"
+    }
+  }
+}

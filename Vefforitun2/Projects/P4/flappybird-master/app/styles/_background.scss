@@ -1,0 +1,19 @@
+.Background {
+		position: absolute;
+		width:200%;
+		height: 57.6em;
+		background-image: url("../img/background.png");
+		background-repeat: repeat-x;
+		background-size: auto 100%;
+		background-position: 0px 0px;
+		background-repeat: repeat-x;
+
+		transform: translateX(0);
+		transform: translateZ(0);
+		animation: background 5s linear infinite;
+}
+
+@keyframes background {
+	from { transform: translateX(0); }
+	to { transform: translateX(-68.2em);}
+}

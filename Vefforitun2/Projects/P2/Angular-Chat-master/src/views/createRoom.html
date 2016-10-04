@@ -1,0 +1,33 @@
+<md-dialog aria-label="Create new Room">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Create new Room</h2>
+                <span flex></span>
+                <md-button aria-label="close" class="md-icon-button" ng-click="cancel()">
+                    <span class="btn btn-lg glyphicon glyphicon-remove"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <md-content layout-padding>
+                <md-input-container>
+                    <label>Name</label>
+                    <input type="text" class="form-control" ng-model="roomName" ng-required="true" required />
+                </md-input-container>
+                <md-input-container>
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password" ng-model="roomPass">
+                </md-input-container>
+                <md-input-container layout="row" layout-align="center">
+                    <label>Topic</label>
+                    <input type="text" class="form-control" name="password" ng-model="roomTopic">
+                </md-input-container>
+            </md-content>
+        </md-dialog-content>
+        <md-dialog-actions>
+            <span flex></span>
+            <button class="btn btn-primary" type="button" ng-disabled="roomName === '' || roomName === undefined" ng-click="ok()">OK</button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

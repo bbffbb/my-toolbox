@@ -1,0 +1,39 @@
+
+<form name="productForm" novalide>
+<div class="modal-header">
+  <h3 class="modal-title">{{Title}}</h3>
+</div>
+<div class="modal-body">
+
+  <div class="form-group">
+      <label translate="productDig.Name">Name</label>
+      <input type="text" name="productName" ng-model="product.name" class="form-control" required>
+      <span ng-show="productForm.productName.$error.required" translate="productDig.NameValidation"></span>
+    </div>
+    <div class="form-group">
+      <label translate="productDig.Price">Price</label>
+      <input type="number" name="productPrice" ng-model="product.price" class="form-control" required>
+      <span ng-show="productForm.productPrice.$error.required" translate="productDig.PriceValidation"></span>
+    </div>
+    <div class="form-group">
+      <label translate="productDig.Sold">Quantity Sold</label>
+      <input type="number" name="productsSold" min="0" ng-model="product.quantitySold" class="form-control" required>
+      <span ng-show="productForm.productsSold.$error.required" translate="productDig.ProductsSoldValidation"></span>
+    </div>
+    <div class="form-group">
+      <label translate="productDig.Stock">Quantity In Stock</label>
+      <input type="number" name="productsInStock" min="0" ng-model="product.quantityInStock" class="form-control" required>
+      <span ng-show="productForm.productsInStock.$error.required" translate="productDig.ProductsInStockValidation"></span>
+    </div>
+    <div class="form-group">
+      <label translate="productDig.Image">Image Url</label>
+      <input type="text" name="productImagePath" ng-model="product.imagePath" class="form-control">
+      <span ng-show="productForm.productImagePath.$error" translate="productDig.ProductsImagePathValidation"></span>
+    </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-disabled="productForm.$invalid" ng-click="ok()" translate="productDig.OK">OK</button>
+  <button class="btn btn-warning" type="button" ng-click="cancel()" translate="productDig.Cancel">Cancel</button>
+</div>
+
+</form>

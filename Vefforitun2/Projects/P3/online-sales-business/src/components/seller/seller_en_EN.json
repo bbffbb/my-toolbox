@@ -1,0 +1,11 @@
+{
+  "seller": {
+		"Add": "Add Product",
+    "AllProducts": "All Products",
+    "TopProducts": "Top Products",
+    "Messages": {
+      "LoadSellerDetailsFailed": "Failed to load seller details",
+      "LoadProductsFailed": "Failed to load the list of products"
+    }
+  }
+}

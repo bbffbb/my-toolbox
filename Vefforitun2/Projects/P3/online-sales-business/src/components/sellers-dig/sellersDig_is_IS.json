@@ -1,0 +1,18 @@
+{
+  "sellersDig": {
+    "Image": "Slóð á mynd",
+    "Name": "Nafn",
+    "Category": "Flokkur",
+    "OK": "Staðfesta",
+    "Cancel": "Hætta við",
+    "NameValidation": "Nafn má ekki vera tómt",
+    "CategoryValidation": "Þú verður að velja flokk",
+    "LogoPathValMessage": "Ef ekki er sett slóð á mynd verður sett sjálfgefin mynd",
+    "Messages": {
+      "SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
+      "SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda",
+      "UpdateSucceeded": "Upplýsingar um seljanda hafa verið uppfærðar",
+      "UpdateFailed": "Því miður tókst ekki að uppfæra upplýsingar seljanda"
+    }
+  }
+}

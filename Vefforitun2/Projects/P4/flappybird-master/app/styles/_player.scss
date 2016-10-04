@@ -1,0 +1,23 @@
+.Player {
+    // Absolutely position entities at 0,0 and use transform to
+    // move it around.
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: em(50px);
+    height: em(50px);
+    background-image: url('../img/mario.PNG');
+    background-size: 600% 100%;
+}
+
+.Player-animation {
+	animation: play 1s steps(6) infinite alternate;
+}
+@keyframes play {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -600%;
+    }
+}

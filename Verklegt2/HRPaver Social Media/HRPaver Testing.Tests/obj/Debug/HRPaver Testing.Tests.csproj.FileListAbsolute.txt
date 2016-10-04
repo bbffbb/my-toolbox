@@ -1,0 +1,48 @@
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\HRPaver Testing.Tests.dll.config
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\HRPaver Testing.Tests.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\HRPaver Testing.Tests.pdb
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\HRPaver Social Media.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\EntityFramework.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Owin.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\HRPaver Social Media.pdb
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\EntityFramework.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\obj\Debug\HRPaver Testing.Tests.csprojResolveAssemblyReference.cache
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\obj\Debug\HRPaver Testing.Tests.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\obj\Debug\HRPaver Testing.Tests.pdb
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\KristóferAndri\Documents\GitHub\Hopur37\HRPaver Social Media\HRPaver Testing.Tests\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
